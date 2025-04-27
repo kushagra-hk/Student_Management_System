@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </nav>
+  <h2>Grades Management</h2>
+  <form id="gradeForm">
+    <input type="number" id="gradeStudentId" placeholder="Student ID" required>
+    <input type="text" id="subject" placeholder="Subject" required>
+    <input type="number" id="grade" step="0.1" placeholder="Grade" required>
+    <button type="submit">Add Grade</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Student ID</th><th>Subject</th><th>Grade</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="gradesTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

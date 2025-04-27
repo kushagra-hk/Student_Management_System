@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background and page structure */
+body {
+  background: linear-gradient(135deg, #EDE8F5, #ADBBDA);
+  color: #3D52A0;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+h1, h2 {
+  text-align: center;
+  color: #3D52A0;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #ADBBDA;
+  margin-top: 50px; /* Ensures no extra space at the top */
+}
+
+/* Forms */
+form {
+  background: #EDE8F5;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(61, 82, 160, 0.2);
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #3D52A0;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ADBBDA;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #3D52A0;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #7091E6;
+  box-shadow: 0 0 10px #7091E6;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  background: #3D52A0;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(61, 82, 160, 0.4);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #7091E6;
+  transform: translateY(-2px);
+}
+
+/* Tables */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(61, 82, 160, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ADBBDA;
+}
+
+th {
+  background-color: #8697E4;
+  color: #fff;
+  text-shadow: 1px 1px 2px #3D52A0;
+}
+
+td {
+  background-color: #F6F4FA;
+  color: #3D52A0;
+}
+
+/* Dashboard Box Style */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 80px; /* Reduced the top margin to avoid too much space */
+  padding-top: 40px; /* Optional: Add padding to space out the boxes */
+}
+
+.dashboard-box {
+  width: 250px;
+  height: 150px;
+  background: linear-gradient(145deg, #EDE8F5, #ADBBDA);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #ADBBDA, -5px -5px 15px #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #3D52A0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dashboard-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 8px 8px 20px #ADBBDA, -8px -8px 20px #FFFFFF;
+  background: linear-gradient(145deg, #ADBBDA, #EDE8F5);
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content:left;
+  background-color: #3D52A0;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 12px rgba(61, 82, 160, 0.5);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ADBBDA;
+  transform: scale(1.1);
+}
+
+
+/* Login page center */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto 40px auto; /* Added bottom margin to create space between login and dashboard */
+  background: #F6F4FA;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(61, 82, 160, 0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #3D52A0;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

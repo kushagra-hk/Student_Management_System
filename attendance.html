@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </nav>
+  <h2>Attendance Management</h2>
+  <form id="attendanceForm">
+    <input type="number" id="attendanceStudentId" placeholder="Student ID" required>
+    <input type="date" id="attendanceDate" required>
+    <select id="status" required>
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+    <button type="submit">Add Attendance</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Student ID</th><th>Date</th><th>Status</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="attendanceTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

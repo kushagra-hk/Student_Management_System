@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Students</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </nav>
+  <h2 class="centerheading">Student Information Management</h2>
+  
+  <form id="studentForm">
+    <input type="text" id="firstName" placeholder="First Name" required>
+    <input type="text" id="lastName" placeholder="Last Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="date" id="enrollmentDate" required>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>First</th><th>Last</th><th>Email</th><th>Enroll</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
